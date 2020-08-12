@@ -36,8 +36,8 @@ aws_secret_access_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"<br>
 | ------- | -------- | ------- |
 | aws_region | "eu-west-1" | リージョン名 |
 | rds_az     | ["eu-west-1a", "eu-west-1b", "eu-west-1c"] | 存在するアベイラビリティゾーン |
-| vpc_cidr   | "10.114.0.0/16" | VPC に使用する private ip address |
-| allow_ip   | ["114.156.135.182/32", "175.134.149.251/32"] | EC2 にアクセス可能な ip address を指定|
+| vpc_cidr   | "10.100.0.0/16" | VPC に使用する private ip address |
+| allow_ip   | ["xxx.xxx.xxx.xxx/32", "xxx.xxx.xxx.xxx/32"] | EC2 にアクセス可能な ip address を指定|
 | tags_owner | "koizumi" | Owner タグの名前 |
 | public_key_path | "C:\\Users\\atsus\\.ssh\\aws_work.ppk.pub" | 公開鍵のパス（※2） |
 
