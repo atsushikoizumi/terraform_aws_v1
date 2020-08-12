@@ -1,0 +1,73 @@
+# base info
+aws_region = "eu-west-1"
+rds_az     = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
+vpc_cidr   = "10.100.0.0/16"
+allow_ip   = ["xxx.xxx.xxx.xxx/32", "xxx.xxx.xxx.xxx/32"]
+
+# owner
+tags_owner = "sample"
+
+# key pair
+public_key_path = "C:\\Users\\user\\.ssh\\sample.pub"
+
+# ec2 amazon linux 2
+amzn2_ami_name        = "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2"
+amzn2_1_instance_type = "t2.micro"
+amzn2_1_volume_type   = "gp2"
+amzn2_1_volume_size   = 30
+amzn2_1_user          = "testuser"
+ec2_root_pass         = "root123!"
+
+# ec2 windows server 2019
+win2019_1_instance_type = "t2.micro"
+win2019_1_volume_type   = "gp2"
+win2019_1_volume_size   = "30"
+
+# rds aurora mysql
+aurora_mysql_cls_ev           = "5.7.mysql_aurora.2.08.1"
+aurora_mysql_cpg_family       = "aurora-mysql5.7"
+aurora_mysql_pg_family        = "aurora-mysql5.7"
+aurora_mysql_opg_ev           = "5.7"
+aurora_mysql_instance_class   = "db.r5.large"
+aurora_mysql_dbname           = "testdb01"
+aurora_mysql_master_user      = "admin"
+aurora_mysql_master_user_pass = "admin123"
+aurora_mysql_cpg_timezone     = "Asia/Tokyo"
+aurora_mysql_cpg_character    = "utf8mb4"
+aurora_mysql_cpg_collation    = "utf8mb4_bin"
+
+# rds aurora postgresql
+aurora_postgre_cls_ev           = "11.7"
+aurora_postgre_cpg_family       = "aurora-postgresql11"
+aurora_postgre_pg_family        = "aurora-postgresql11"
+aurora_postgre_instance_class   = "db.r5.large"
+aurora_postgre_dbname           = "testdb01"
+aurora_postgre_master_user      = "postgres"
+aurora_postgre_master_user_pass = "postgres123"
+aurora_postgre_local            = "ja_JP.UTF-8"
+
+# rds oracle
+rds_oracle_pg_family      = "oracle-se2-19"
+rds_oracle_eg_nm          = "oracle-se2"
+rds_oracle_op_ev          = 19
+rds_oracle_instance_class = "db.r5.large"
+rds_oracle_ev             = "19.0.0.0.ru-2019-07.rur-2019-07.r1"
+rds_oracle_lisence        = "license-included"
+rds_oracle_dbname         = "TESTDB01" # must be upper
+rds_oracle_user           = "admin"
+rds_oracle_user_pass      = "Admin123!"
+rds_oracle_timezone       = "Asia/Tokyo"
+rds_oracle_chara          = "UTF8"
+
+# rds sqlserver
+rds_sqlserver_pg_family      = "sqlserver-se-14.0"
+rds_sqlserver_eg_nm          = "sqlserver-se"
+rds_sqlserver_op_ev          = "14.00"
+rds_sqlserver_lisence        = "license-included"
+rds_sqlserver_instance_class = "db.r5.large"
+rds_sqlserver_ev             = "14.00.3281.6.v1"
+rds_sqlserver_user           = "admin"
+rds_sqlserver_user_pass      = "admin123"
+sqlserver_audit_s3_arn       = "arn:aws:s3:::koizumi-logs"
+rds_sqlserver_timezone       = "Tokyo Standard Time"
+rds_sqlserver_chara          = "Japanese_CI_AS"
